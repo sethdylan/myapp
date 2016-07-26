@@ -1,3 +1,114 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    background-color: #b1a8c1;
+}
+
+/**** Nav bar page ****/
+.navbar {
+  background-color: #678889;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  line-height: normal;
+  font-family: Monoton;
+
+}
+
+.navbar a {
+  color: #b1a8c1;
+  font-size: 100%;
+  font-family: Monoton;
+  word-spacing: 5px;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 120%;
+  letter-spacing:  0.25em;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+  font-family: Monoton;
+}
+
+.navbar a:hover {
+  color: #a4add3;
+  text-decoration: none;
+  font-family: Monoton;
+}
+
+h1,{
+  font-family: Monoton;
+  color: #34495e;
+  text-align: center;
+  padding-top: 80px;
+  text-shadow: 3px 2px #a4add3;
+  word-spacing: 5px;
+}
+
+.goods {
+  font-family: Monoton;
+  color: #34495e;
+  text-align: center;
+  padding-top: 80px;
+  text-shadow: 3px 2px #a4add3;
+  word-spacing: 5px;
+}
+
+h2,{
+  font-family: Monoton;
+  color: #34495e;
+  text-align: center;
+  text-shadow: 3px 2px #a4add3;
+  word-spacing: 5px;
+  padding-bottom: 60px;
+}
+
+h3 {
+  font-family: Monoton;
+  color: #34495e;
+  text-align: center;
+  word-spacing: 5px;
+
+}
+p {
+  font-family: Monoton;
+  font-size: 28px;
+  color: #34495e;
+  text-align: center;
+  word-spacing: 5px;
+  padding-top: 40px
+}
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: inline-table;
+    background-color: #678889;
+}
+.social a {
+  padding: 60px
+}
+
+.social p {
+  margin-top: 40px;
+}
+
+#tag {
+  font-family: Monoton;
+  color: #34495e;
+  word-spacing: 5px;
+}
