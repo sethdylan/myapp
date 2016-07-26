@@ -51,7 +51,7 @@ h1,{
   text-align: center;
   padding-top: 80px;
   text-shadow: 3px 2px #a4add3;
-  word-spacing: 5px;
+  word-spacing: 10px;
 }
 
 h2,{
@@ -59,7 +59,7 @@ h2,{
   color: #34495e;
   text-align: center;
   text-shadow: 3px 2px #a4add3;
-  word-spacing: 5px;
+  word-spacing: 10px;
   padding-bottom: 60px;
 }
 
@@ -67,16 +67,30 @@ h3 {
   font-family: Monoton;
   color: #34495e;
   text-align: center;
-  word-spacing: 5px;
+  word-spacing: 10px;
 
 }
-p {
+
+.about {
   font-family: Monoton;
   font-size: 28px;
   color: #34495e;
   text-align: center;
   word-spacing: 5px;
-  padding-top: 40px
+  line-height: normal;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.contact {
+  font-family: Monoton;
+  font-size: 28px;
+  color: #34495e;
+  text-align: center;
+  word-spacing: 5px;
+  line-height: normal;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 

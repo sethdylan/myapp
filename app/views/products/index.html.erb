@@ -1,54 +1,38 @@
+<div class="container-fluid text-xs-center">
+
 <p id="notice"><%= notice %></p>
 
 
 <h1>The GOODS</h1>
 
-
-
-<table>
-  <div class="goods"></div>
-  <thead>
-    <tr>
-      <th>Disco Ball Helmet</th>
-      <th>Nothing says gypsy like a helmet, that is also a disco ball!</th>
-      <th><%= image_tag("disco_ball_hat.jpg", class: "img-responsive my-image") %></th>
-      <th colspan="3"></th>
-    </tr>
-  </div>
-    <tr>
-      <th>Geometric Gypsy Rug</th>
-      <th>Our take on thek classic gypsy rug</th>
-      <th><%= image_tag("gypsy_rug.jpg", class: "img-responsive my-image") %></th>
-      <th colspan="3"></th>
-    </tr>
-    <tr>
-      <th>Super Gypsy Socks</th>
-      <th>Doesn't get much better!</th>
-      <th><%= image_tag("gypsy_socks.jpg", class: "img-responsive my-image") %></th>
-      <th colspan="3"></th>
-    </tr>
-    <tr>
-      <th>Super Gypsy Succulents</th>
-      <th>They look awesome anywhere!</th>
-      <th><%= image_tag("gypsy_plants.jpg", class: "img-responsive my-image") %></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @products.each do |product| %>
+  <div class="table-responsive">
+   <table class="table table-inverse">
+    <thead>
       <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th class="text-xs-center">Name</th>
+        <th class="text-xs-center">Description</th>
+        <th class="text-xs-center">Image url</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
+    </thead>
 
-  </tbody>
-</table>
+    <tbody>
+      <% @products.each do |product| %>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.description %></td>
+          <td><%= product.image_url %></td>
+          <td><%= link_to 'Show', product %></td>
+          <td><%= link_to 'Edit', edit_product_path(product) %></td>
+          <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
 
-<br>
+      </tbody>
+    </table>
 
-<%= link_to 'New Product', new_product_path %>
+  <br>
+
+  <%= link_to 'New Product', new_product_path %>
+  </div>
+</div>
