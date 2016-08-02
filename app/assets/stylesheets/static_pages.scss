@@ -11,6 +11,7 @@ body {
     background-color: #b1a8c1;
 }
 
+
 /**** Nav bar page ****/
 .navbar {
   background-color: #678889;
@@ -20,7 +21,18 @@ body {
   top: 0;
   line-height: normal;
   font-family: Monoton;
+}
 
+.projectName navbar-brand ul li {
+  padding-bottom: 30px;
+  color: blue;
+  }
+
+.projectName navbar-brand {
+  color: #b1a8c1;
+  font-size: 100%;
+  font-family: Monoton;
+  word-spacing: 5px;
 }
 
 .navbar a {
@@ -29,6 +41,8 @@ body {
   font-family: Monoton;
   word-spacing: 5px;
 }
+
+
 .navbar ul li a {
   color: white;
   font-size: 120%;
@@ -39,11 +53,6 @@ body {
   font-family: Monoton;
 }
 
-.navbar a:hover {
-  color: #a4add3;
-  text-decoration: none;
-  font-family: Monoton;
-}
 
 h1,{
   font-family: Monoton;

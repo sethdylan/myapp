@@ -3,7 +3,7 @@
   <head>
     <title>Myapp</title>
 
-     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
@@ -30,18 +30,18 @@
             <span class="icon-bar"></span>
           </button>
           <div class="projectName navbar-brand">
-            <a href="/static_pages/index">Seth's Gypsy Goods</a>
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Seth's Gypsy Goods", root_path, class: "nav-item nav-link" %></li>
+            </ul>
           </div> <!--end projectName -->
         </div> <!--end navbar-header -->
 
 <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Home', static_pages_index_path %></li>
-            <li><%= link_to 'About', static_pages_about_path %></li>
-            <li><%= link_to "The Goods",  products_path, class: "nav-item nav-link" %></li>
-            <li><%= link_to 'Contact', static_pages_contact_path %></li>
-
+            <li><%= link_to "About", about_path, class: "nav-item nav-link" %></li>
+            <li><%= link_to "The Goods", products_path, class: "nav-item nav-link" %></li>
+            <li><%= link_to "Contact", contact_path, class: "nav-item nav-link" %></li>
           </ul>
         </div> <!-- nav -->
       </div><!-- end nav container-->
