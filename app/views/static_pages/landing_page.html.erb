@@ -1,3 +1,6 @@
+<h1>Welcome to Seth's Gypsy Goods</h1>
+<h2>Your source for everything Gypsy</h2>
+
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -9,7 +12,7 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <%= @products.each do |product| %>
+    <% @products.each do |product| %>
       <div class="item<%= " active" if product == @products.first %>">
       <%= image_tag(product.image_url) %>
         <div class="carousel-caption">

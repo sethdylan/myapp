@@ -6,6 +6,7 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     margin: 0 0 100px; /* bottom = footer height */
     background-color: #b1a8c1;
@@ -23,16 +24,13 @@ body {
   font-family: Monoton;
 }
 
-.projectName navbar-brand ul li {
-  padding-bottom: 30px;
-  color: blue;
-  }
 
 .projectName navbar-brand {
   color: #b1a8c1;
   font-size: 100%;
   font-family: Monoton;
   word-spacing: 5px;
+
 }
 
 .navbar a {
@@ -40,10 +38,13 @@ body {
   font-size: 100%;
   font-family: Monoton;
   word-spacing: 5px;
+  display: inline-table;
+  line-height: normal;
+  padding-bottom: 20px
 }
 
 
-.navbar ul li a {
+.navbar ul li  {
   color: white;
   font-size: 120%;
   letter-spacing:  0.25em;
