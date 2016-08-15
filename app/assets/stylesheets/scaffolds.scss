@@ -20,16 +20,6 @@ pre {
   font-size: 11px;
 }
 
-a {
-
-  color: #000;
-  line-height: 20px;
-  &:visited {
-  color: #666;
-  }
-
-}
-
 th {
   padding-bottom: 5px;
 }
@@ -75,10 +65,6 @@ div {
     color: #fff;
   }
 
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
 }
 
 label {

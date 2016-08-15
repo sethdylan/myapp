@@ -24,56 +24,53 @@ body {
   font-family: Monoton;
 }
 
-
-.projectName navbar-brand {
-  color: #b1a8c1;
-  font-size: 100%;
-  font-family: Monoton;
-  word-spacing: 5px;
-
-}
-
 .navbar a {
-  color: #b1a8c1;
-  font-size: 100%;
+  color: #34495e;
+  font-size: 120%;
   font-family: Monoton;
   word-spacing: 5px;
   display: inline-table;
   line-height: normal;
-  padding-bottom: 20px
 }
 
+.navbar a:hover {
+  color: white;
+  text-decoration: none;
+}
 
 .navbar ul li  {
-  color: white;
-  font-size: 120%;
+  color: #34495e;
+  font-size: 100%;
   letter-spacing:  0.25em;
   text-decoration: none;
-  transition: color 600ms;
-  -webkit-transition: color 600ms;
   font-family: Monoton;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: #34495e;
+  }
 
-.nav-item nav-link {
-  color: #b1a8c1;
-  font-size: 100%;
-  font-family: Monoton;
-  word-spacing: 5px;
-  display: inline-table;
-  line-height: normal;
-  padding-bottom: 20px
-}
 
 
 /********Carousel******/
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
-    max-width: 100%;
+    max-width: 150%;
+    max-height: 150%;
     height: auto;
     position: relative;
     margin: auto;
+}
+
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 5px;
+    font-family: Monoton;
+    color: #f1fde7;
+    font-size: 30px;
+    letter-spacing:  0.25em;
 }
 
 
