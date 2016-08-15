@@ -54,6 +54,18 @@ body {
   font-family: Monoton;
 }
 
+
+.nav-item nav-link {
+  color: #b1a8c1;
+  font-size: 100%;
+  font-family: Monoton;
+  word-spacing: 5px;
+  display: inline-table;
+  line-height: normal;
+  padding-bottom: 20px
+}
+
+
 /********Carousel******/
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
