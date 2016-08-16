@@ -123,6 +123,45 @@ h3 {
 }
 
 
+
+/********Contact Page******/
+
+.contact {
+  font-family: Monoton;
+  font-size: 28px;
+  color: #34495e;
+  text-align: center;
+  word-spacing: 5px;
+  line-height: normal;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.row {
+  display: inline;
+  font-family: Monoton;
+  margin-top: 50px;
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+    padding-top: 65px;
+    padding-left: 90px;
+}
+
+
+/********Thank You Page******/
+
+#thank-you {
+ position: inline;
+ background-color: #b1a8c1;
+ padding-top: 70px;
+}
+
+
+
+/********Footer******/
+
 footer {
     position: absolute;
     left: 0;
@@ -146,5 +185,7 @@ footer {
   color: #34495e;
   word-spacing: 5px;
 }
+
+
 
 
