@@ -31,11 +31,19 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+
+  #5.4 lesson - devise install
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #5.4 lesson
+  default_url_options
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
+
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large

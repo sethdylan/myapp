@@ -46,11 +46,17 @@ body {
   font-family: Monoton;
 }
 
+a.nav-item.nav-link {
+line-height: 20px;
+}
+
 .navbar-inverse .navbar-nav>li>a {
     color: #34495e;
   }
 
-
+.navbar-right {
+    float: right!important;
+}
 
 /********Carousel******/
 
@@ -160,6 +166,32 @@ h3 {
 
 
 
+/********Log in/Sign up******/
+
+.field {
+  font-family: Monoton;
+  font-size: 20px;
+  color: #34495e;
+  word-spacing: 5px;
+  line-height: normal;
+  padding-left: 530px;
+}
+
+.actions {
+  font-family: Monoton;
+  font-size: 15px;
+  color: #34495e;
+  word-spacing: 20px;
+  line-height: normal;
+  padding-left: 530px;
+}
+
+a {
+  font-family: Monoton;
+
+}
+
+
 /********Footer******/
 
 footer {
@@ -187,5 +219,8 @@ footer {
 }
 
 
+a {
+  font-family: Monoton;
 
+}
 
