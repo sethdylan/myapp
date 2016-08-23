@@ -8,10 +8,11 @@ body {
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: monoton;
+  word-spacing: 4px;
+  font-size: 14px;
   line-height: 18px;
-  margin: 33px;
+  margin: 70px;
 }
 
 pre {
@@ -20,6 +21,14 @@ pre {
   font-size: 11px;
 }
 
+.alert {
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 5em;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
 
 
 th {
@@ -76,3 +85,4 @@ div {
 label {
   display: block;
 }
+
