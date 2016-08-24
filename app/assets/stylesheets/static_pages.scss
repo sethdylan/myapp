@@ -15,7 +15,7 @@ body {
 
 /**** Nav bar page ****/
 .navbar {
-  background-color: #678889;
+  background-color: #088da5;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar a {
-  color: #34495e;
+  color: #9ad6d0;
   font-size: 120%;
   font-family: Monoton;
   word-spacing: 5px;
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar ul li  {
-  color: #34495e;
+  color: #9ad6d0;
   font-size: 100%;
   letter-spacing:  0.25em;
   text-decoration: none;
@@ -51,7 +51,7 @@ line-height: 20px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #34495e;
+    color: #9ad6d0;
   }
 
 .navbar-right {
@@ -209,14 +209,14 @@ label {
 /********Footer******/
 
 footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    display: inline-table;
-    background-color: #678889;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  display: inline-table;
+  background-color: #088da5;
 }
 .social a {
   padding: 60px
@@ -228,13 +228,14 @@ footer {
 
 #tag {
   font-family: Monoton;
-  color: #34495e;
+  color: #9ad6d0;
   word-spacing: 5px;
+  font-size: 16px;
 }
 
 
 a {
   font-family: Monoton;
-
+  color: #088da5;
 }
 
