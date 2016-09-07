@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 #Lesson 5.4 cancancan install
 gem 'cancancan'
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -57,3 +58,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Devise
 gem 'devise'
+
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
+
+
+
+
+
+
