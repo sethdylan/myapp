@@ -25,7 +25,7 @@
   <%= @product.price %>
 </p>
 
-<%= @product.highest_rating_comment %>
+<p>Average Rating: <div class="rated" data-score="<= @product.average_rating %>"></div> </p>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
