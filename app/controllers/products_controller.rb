@@ -1,25 +1,25 @@
 class ProductsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
   # GET /products.json
   def index
-  @products = Product.limit(3)
+    if params[:q]
+      search_term = params[:q] # return our filtered list here
+      if Rails.env.development?
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+
+      else Rails.env.production?
+        @products = Product.where("name ilike ?", "%#{search_term}%")
+      end
+    else
+      @products = Product.all
+    end
   end
 
-# def index
-#   if params[:q]
-#     search_term = params[:q]
-#     @products = Product.where("name LIKE ?", "%#{search_term}%")
-#   else
-#     @products = Product.all
-#   end
-# end
-
-  # GET /products/1
-  # GET /products/1.json
   def show
-    @comments = @product.comments.order('created_at DESC')
+    # @comments = @product.comments.order('created_at DESC') Commented out to try and make Heroku work
     @comments = @product.comments.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
   end
 
