@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  load_and_authorize_resource
+  # load_and_authorize_resource
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -39,7 +39,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        # redirect_to "/static_pages/landing_page"
+        redirect_to "/static_pages/landing_page"
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
