@@ -28,8 +28,8 @@ body {
   color: #9ad6d0;
   font-size: 120%;
   font-family: Monoton;
-  word-spacing: 5px;
-  display: inline-table;
+  word-spacing: 2px;
+  display: inline-block;
   line-height: normal;
 }
 
@@ -52,6 +52,8 @@ line-height: 20px;
 
 .navbar-inverse .navbar-nav>li>a {
     color: #9ad6d0;
+    display: inline-block;
+    padding: 19px -16px;
   }
 
 .navbar-right {
@@ -67,8 +69,8 @@ line-height: 20px;
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
-    max-width: 150%;
-    max-height: 150%;
+    max-width: 200%;
+    max-height: 200%;
     height: auto;
     position: relative;
     margin: auto;

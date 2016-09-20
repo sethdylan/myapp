@@ -3,12 +3,11 @@
 <p id="notice"><%= notice %></p>
 <%= alert %>
 
-
 <div class="container-fluid">
   <div class="row">
-    <% @products.each do |product| %>
+
       <%= render @products %>
-    <% end %>
+
   </div>
   <%= link_to 'New Product', new_product_path %>
 
