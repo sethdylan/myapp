@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
+    resources :users
+
 
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
@@ -20,7 +22,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
-  # resources :orders, only: [:index, :show, :create, :destroy]
+  resources :orders, only: [:index, :show, :create, :destroy]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

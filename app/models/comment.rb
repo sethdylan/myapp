@@ -5,7 +5,4 @@ class Comment < ApplicationRecord
     validates :user, presence: true
     validates :product, presence: true
     validates :rating, numericality: { only_integer: true }
-
-  scope :rating_desc, -> { order(rating: :desc) }
-  scope :rating_asc, -> { order(rating: :asc) }
 end
