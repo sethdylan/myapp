@@ -39,8 +39,8 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        redirect_to "/static_pages/landing_page"
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        # redirect_to "/static_pages/landing_page"
+        format.html { redirect_to root_path, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
