@@ -2,7 +2,7 @@
         <h1><%= product.name %></h1>
         <p><%= product.description %></p>
         <%= image_tag(product.image_url, class:"img-responsive") %>
-        <p><%= product.colour %></p>
+        <p>Color: <%= product.colour %></p>
         <p>$<%= product.price %></p>
       <%= link_to 'Show', product %>
       <%= link_to 'Edit', edit_product_path(product) %>

@@ -19,8 +19,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    # @comments = @product.comments.order('created_at DESC') Commented out to try and make Heroku work
-    @comments = @product.comments.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
+    @comments = @product.comments.order('created_at DESC')
   end
 
 

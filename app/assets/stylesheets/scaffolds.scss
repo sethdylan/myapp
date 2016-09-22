@@ -1,18 +1,25 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Monoton;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
 }
 
 p, ol, ul, td {
+  text-align:center;
   font-family: monoton;
   word-spacing: 4px;
   font-size: 14px;
   line-height: 18px;
   margin: 70px;
+}
+
+p {
+  font-size: 25px;
+  word-spacing: 4px;
+  line-height: 120%;
 }
 
 pre {
@@ -88,4 +95,36 @@ div {
 label {
   display: block;
 }
+
+h4 {
+    text-align: center;
+    display: block;
+    word-spacing: 4px;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.rated {
+    text-align: center;
+}
+
+.rating {
+    text-align: center;
+
+}
+
+a {
+    text-align: center;
+    font-family: Monoton;
+    color: #088da5;
+}
+
+#new_comment {
+  margin: 0px;
+}
+
+
 
