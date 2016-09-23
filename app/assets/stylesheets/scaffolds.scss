@@ -13,13 +13,14 @@ p, ol, ul, td {
   word-spacing: 4px;
   font-size: 14px;
   line-height: 18px;
-  margin: 70px;
+  margin: 45px 5px 50px 20px;
 }
 
 p {
   font-size: 25px;
   word-spacing: 4px;
   line-height: 120%;
+  padding-top: 30px;
 }
 
 pre {
@@ -120,11 +121,28 @@ a {
     text-align: center;
     font-family: Monoton;
     color: #088da5;
+    letter-spacing: 1px;
 }
 
 #new_comment {
   margin: 0px;
 }
+
+.col-sm-6.col-md-6 {
+  padding-top: 40px;
+}
+
+.show {
+      padding: 0px;
+
+}
+
+#new_comment {
+  padding: 0px;
+}
+
+
+
 
 
 
