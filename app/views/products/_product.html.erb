@@ -3,8 +3,5 @@
 
   <%= link_to image_tag(product.image_url, class: "img-responsive"), product_path(product) %>
 
-  <div id="edit-destroy">
-  <%= link_to 'Edit', edit_product_path(product) %>
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-  </div>
+
 </div>
