@@ -2,7 +2,11 @@
 
 describe UsersController, :type => :controller do
 
-  let(:user) { User.create!(email: 'peter@example.com', password: '1234567890') }
+
+  before do
+  @user = User.create!(email: 'example@example.com', password: 'example')
+  @user2 = User.create!(email: 'example2@example.com', password: 'example')
+  end
 
   describe 'GET #show' do
      context 'User is logged in' do
@@ -18,7 +22,7 @@ describe UsersController, :type => :controller do
 
        it 'Can only see own page' do
         get :show, id: @user2.id
-        expect(response).to have_http_status(401)
+        expect(response).to have_http_status(302)
         expect(response).to redirect_to(root_path)
       end
     end
@@ -26,7 +30,7 @@ describe UsersController, :type => :controller do
 
      context 'No user is logged in' do
        it 'redirects to login' do
-         get :show, id: user.id
+         get :show, id: @user.id
          expect(response).to redirect_to(root_path)
        end
      end
