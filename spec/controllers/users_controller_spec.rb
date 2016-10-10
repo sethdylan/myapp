@@ -1,21 +1,12 @@
  require 'rails_helper'
 
-describe User, :type => :model do
-  it "should not validate users without an email address" do
-    @user = FactoryGirl.build(:user, email: "not_an_email")
-    expect(@user).to_not be_valid
-  end
-end
-
-
-
 describe UsersController, :type => :controller do
 
 
   before do
     @user = FactoryGirl.create(:user)
 
-    @user2 = User.create!(email: 'example2@example.com', password: 'example')
+    @user2 = FactoryGirl.create(:user)
   end
 
   describe 'GET #show' do
