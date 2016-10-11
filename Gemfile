@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 2.5'
 #Lesson 5.4 cancancan install
 gem 'cancancan'
 
+#Lesson 6.5 Stripe
+gem 'stripe'
+
 
 
 group :development, :test do
@@ -43,6 +46,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   #Lesson 6.4 FactoryGirl install
   gem "factory_girl_rails", "~> 4.0"
+
 
 end
 
