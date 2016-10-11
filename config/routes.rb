@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   post 'static_pages/thank_you'
 
   get 'static_pages/about'
+
   get 'static_pages/products'
 
   get 'static_pages/contact'
