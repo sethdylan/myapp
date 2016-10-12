@@ -8,7 +8,7 @@ end
 
 class PeopleController < ApplicationController
   def new
-    byebug
+    # byebug
     @product = Product.new
   end
 end
