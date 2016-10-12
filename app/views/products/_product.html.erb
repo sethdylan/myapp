@@ -1,7 +1,5 @@
 <div class="col-sm-6 col-md-6 goods-images"><!-- /col -->
 
-
   <%= link_to image_tag(product.image_url, class: "img-responsive"), product_path(product) %>
-
-
+  <% logger.debug "Product: #{product.name}" %>
 </div>

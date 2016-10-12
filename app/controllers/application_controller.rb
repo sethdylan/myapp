@@ -5,3 +5,10 @@ class ApplicationController < ActionController::Base
   redirect_to main_app.root_url, :alert => exception.message
   end
 end
+
+class PeopleController < ApplicationController
+  def new
+    byebug
+    @product = Product.new
+  end
+end
