@@ -1,17 +1,21 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :registrations => "user_registrations" }
-  resources :users
-  resources :products do
-    resources :comments
-  end
 
+  resources :products do
+  resources :comments
+
+
+  resources :orders, only: [:index, :show, :create, :destroy]
+  end
+  resources :users
+
+  get 'payments/create'
 
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
 
   root 'static_pages#landing_page'
 
-  post 'static_pages/thank_you'
 
   get 'static_pages/about'
 
@@ -21,7 +25,11 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
-  resources :orders, only: [:index, :show, :create, :destroy]
+  post 'static_pages/thank_you'
+
+  post 'payments/create'
+
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
