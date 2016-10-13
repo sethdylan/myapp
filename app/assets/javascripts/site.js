@@ -1,4 +1,5 @@
 $(document).on('turbolinks:load', function(){
+  $('.img-zoom').elevateZoom();
   $('.rating').raty( { path: '/assets/images', scoreName: 'comment[rating]'});
   $('.rated').raty({ path: '/assets/images',
     readOnly: true,

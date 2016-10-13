@@ -72,8 +72,6 @@ gem 'devise'
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.0'
 
-#6.8 Brakeman
-gem "brakeman", :require => false
 
 
 
