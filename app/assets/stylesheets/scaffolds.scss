@@ -16,12 +16,25 @@ p, ol, ul, td {
   margin: 45px 5px 50px 20px;
 }
 
+
+
+
 p {
-  font-size: 20px;
-  word-spacing: 4px;
-  line-height: 120%;
-  padding-top: 30px;
+    font-size: 20px;
+    word-spacing: 4px;
+    line-height: 60%;
+    padding-top: 0px;
 }
+
+
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    width: 6em;
+    height: 2em;
+}
+
+
 
 pre {
   background-color: #eee;
@@ -170,17 +183,18 @@ a {
 
 
 .show {
-  padding: 45px;
+  padding-top: 85px;
 
 }
 
 .show-name {
-    font-size: 31px;
+    font-size: 35px;
     word-spacing: 8px;
     line-height: 50%;
-    padding-top: 30px;
-    margin-top: -5px;
+    padding-top: 5px;
+    margin-top: 30px;
 }
+
 
 #edit-destroy {
   margin: 30px;
@@ -225,6 +239,7 @@ a {
     background-color: #b1a8c1;
     padding-top: 70px;
     font-size: 40px;
+    line-height: 50px;
 }
 
 #new_comment {
@@ -232,3 +247,24 @@ a {
     text-align: center;
     font-size: 45px;
 }
+
+element.style {
+    margin: 2px;
+    height: 40px;
+    width: 342px;
+    word-spacing: 4px;
+    padding-top: 10px;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    word-spacing: 4px;
+    line-height: 105%;
+    padding-top: 5px;
+}
+
+
+
+
+
