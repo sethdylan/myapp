@@ -37,6 +37,8 @@ gem 'cancancan'
 #Lesson 6.5 Stripe
 gem 'stripe'
 
+#6.11 added dalli
+gem 'dalli'
 
 
 group :development, :test do

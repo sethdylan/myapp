@@ -1,6 +1,6 @@
-
-
 <div class="show">
+
+    <% cache @product do %>
 
     <p class="show-name">
     <%= @product.name %>
@@ -41,6 +41,8 @@
       </div>
 
     </div>
+
+    <% end %>
 
 </div>
 
