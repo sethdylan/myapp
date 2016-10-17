@@ -145,9 +145,7 @@ a {
   margin: 0px;
 }
 
-.col-sm-6.col-md-6 {
-  padding-top: 40px;
-}
+
 
 .show {
       padding: 0px;
@@ -193,6 +191,7 @@ a {
     line-height: 50%;
     padding-top: 5px;
     margin-top: 30px;
+
 }
 
 
@@ -222,11 +221,15 @@ a {
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    max-width: 250%;
+    height: 600px;
     border: 3px solid black;
+    border-radius: 25%;
 }
 
+.img-zoom{
+  border: 3px solid black;
+}
 
 
 .img-responsive:hover {
@@ -246,15 +249,10 @@ a {
     padding: 0px;
     text-align: center;
     font-size: 45px;
+    padding-top: 20px;
+    color: #803341;
 }
 
-element.style {
-    margin: 2px;
-    height: 40px;
-    width: 342px;
-    word-spacing: 4px;
-    padding-top: 10px;
-}
 
 textarea {
     font-family: inherit;
@@ -274,6 +272,33 @@ textarea {
     padding-bottom: 45px;
 
 }
+
+.rated {
+    font-family: Monoton;
+    text-align: center;
+    font-size: 45px;
+    word-spacing: 6px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 45px;
+}
+
+
+#new-product {
+  font-family: Monoton;
+  color: black;
+  font-size: 16px;
+  padding-right: 100px
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    display: block;
+    max-width: 200%;
+    height: 600px;
+    position: relative;
+    margin: auto;
+}
+
 
 
 

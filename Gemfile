@@ -40,6 +40,9 @@ gem 'stripe'
 #6.11 added dalli
 gem 'dalli'
 
+#6.12 added Redis
+gem 'redis-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
