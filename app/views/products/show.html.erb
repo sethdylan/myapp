@@ -46,10 +46,18 @@
 
 </div>
 
+
+
+<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+
 <p>Average Rating: <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div></p>
+
 
 
 <%= render 'new_comment' %>
 <%= render 'comments' %>
+
+
+
 
 
