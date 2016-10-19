@@ -70,7 +70,6 @@ line-height: 20px;
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
     max-width: 200%;
-
     height: 450px;
     position: relative;
     margin: auto;
@@ -117,6 +116,8 @@ h3 {
 
 }
 
+
+/********About Page******/
 .about {
   font-family: Monoton;
   font-size: 28px;
@@ -127,20 +128,6 @@ h3 {
   padding-top: 40px;
   padding-bottom: 30px;
 }
-
-.contact {
-  font-family: Monoton;
-  font-size: 28px;
-  color: #34495e;
-  text-align: center;
-  word-spacing: 5px;
-  line-height: normal;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
-/********About Page******/
-
 
 
 /********Contact Page******/
@@ -199,10 +186,6 @@ h3 {
   padding-left: 530px;
 }
 
-a {
-  font-family: Monoton;
-
-}
 
 label {
   max-width: 100%;

@@ -3,35 +3,29 @@ Rails.application.routes.draw do
 
   resources :products do
   resources :comments
-
-
-  # resources :orders, only: [:index, :show, :create, :destroy]
   end
+
+  resources :orders, only: [:index, :show, :create, :destroy]
   resources :users
+  # get 'static_pages/about'
+  # get 'static_pages/contact'
 
-  get 'payments/create'
 
-  get 'about' => 'static_pages#about'
-  get 'contact' => 'static_pages#contact'
 
   root 'static_pages#landing_page'
-
-
-  get 'static_pages/about'
-
-  get 'static_pages/products'
-
-  get 'static_pages/contact'
-
   get 'static_pages/index'
+  get 'about' => 'static_pages#about'
+  get 'static_pages/products'
+  get 'contact' => 'static_pages#contact'
 
   post 'static_pages/thank_you'
+
+  get 'payments/create'
 
   post 'payments/create'
 
   mount ActionCable.server => '/cable'
 
-
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+
