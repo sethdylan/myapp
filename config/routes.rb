@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :comments
 
 
-  resources :orders, only: [:index, :show, :create, :destroy]
+  # resources :orders, only: [:index, :show, :create, :destroy]
   end
   resources :users
 
