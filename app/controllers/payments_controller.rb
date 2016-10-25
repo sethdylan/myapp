@@ -19,7 +19,7 @@ before_action :authenticate_user!
 
       if charge.paid
         Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
-        UserMailer.welcome(@user).deliver_now
+        UserMailer.payment_thank_you(@user).deliver_now
       end
 
     rescue Stripe::CardError => e
