@@ -1,6 +1,8 @@
 class PaymentsController < ApplicationController
 
-skip_before_filter :verify_authenticity_token, :only => :createI
+skip_before_filter :verify_authenticity_token, :only => :create
+
+before_action :authenticate_user!
 
   def create
     @product = Product.find(params[:product_id])
@@ -15,9 +17,10 @@ skip_before_filter :verify_authenticity_token, :only => :createI
         :description => params[:stripeEmail]
       )
 
-    if charge.paid
-      Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
-    end
+      if charge.paid
+        Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
+        UserMailer.welcome(@user).deliver_now
+      end
 
     rescue Stripe::CardError => e
       # The card has been declined
@@ -29,4 +32,3 @@ skip_before_filter :verify_authenticity_token, :only => :createI
   end
 end
 
-#@product.price.to_i on line9 and line16

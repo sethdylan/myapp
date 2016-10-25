@@ -16,7 +16,7 @@
     </p>
 
     <p class="show-name">
-    <%= image_tag(@product.image_url, width: "500", class: "img-zoom", data_zoom_image:@product.image_url) %>
+    <%= image_tag(@product.image_url, width: "600", class: "img-zoom", data_zoom_image:@product.image_url) %>
     </p>
 
     <p class="show-name">
@@ -36,9 +36,8 @@
       <%= link_to 'Back', products_path %>
 
       <div id="edit-destroy">
-      <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
-
     </div>
 
     <% end %>
