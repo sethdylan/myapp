@@ -11,7 +11,7 @@ before_action :authenticate_user!
     # Create the charge on Stripe's servers - this will charge the user's card
     begin
       charge = Stripe::Charge.create(
-        :amount => (@product.price * 100), # amount in cents, again
+        :amount => (@product.price * 100),
         :currency => "usd",
         :source => token,
         :description => params[:stripeEmail]
@@ -19,7 +19,7 @@ before_action :authenticate_user!
 
       if charge.paid
         Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
-        UserMailer.payment_thank_you(@user).deliver_now
+        UserMailer.welcome(@user).deliver_now
       end
 
     rescue Stripe::CardError => e
